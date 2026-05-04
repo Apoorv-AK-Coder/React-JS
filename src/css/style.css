@@ -1,0 +1,288 @@
+/* Global CSS Starts Here*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+:root {
+    --primary-color: #D91E41;
+    --secondary-color: #23338C;
+    --third-color: #001834;
+    --fourth-color: #ffffff;
+    --fifth-color: #141414;
+    --fifth-green: #038C17;
+    --fifth-orange: #D95204;
+    --fifth-seablue: #006A75;
+    --fifth-purple: #A10068;
+    /*fonts*/
+    --primary-font: "Cantora One";
+    --secondary-font: Montserrat;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    padding: 75px 20px;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    background-color: var(--fourth-color);
+}
+
+.column {
+    flex: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    color: var(--fifth-color);
+    font-weight: 700;
+}
+
+p,
+a,
+button,
+li,
+figcaption {
+    font-family: var(--secondary-font);
+    line-height: 2;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: var(--fifth-color);
+    font-weight: 400;
+}
+
+a {
+    color: var(--primary-color);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: var(--fourth-color);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+button {
+    border: none;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 10px 30px;
+    color: var(--fourth-color);
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+}
+
+.gap {
+    gap: 2.5rem;
+}
+
+.gap1 {
+    gap: 2rem;
+}
+
+.gap2 {
+    gap: 1.5rem;
+}
+
+.gap3 {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 25px;
+}
+
+.grid1 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid3 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid4 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.newheader {
+    background: linear-gradient(to bottom, rgba(0, 24, 52, 0.9), rgb(0, 24, 52, 0));
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    .logocol {
+        width: fit-content;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .row {
+        padding-block: 10px;
+    }
+}
+
+.newheader.scrolled {
+    background-color: var(--third-color);
+}
+
+.navigate {
+    margin: auto 0;
+    flex: 1;
+
+    nav ul li a.active {
+        color: var(--primary-color);
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        margin-bottom: 0;
+        justify-content: right;
+    }
+
+    a {
+        color: var(--fourth-color);
+        font-weight: 700;
+        padding: 7px 15px;
+        text-decoration: none;
+    }
+
+    li {
+        margin: 0;
+        cursor: pointer;
+    }
+
+    a:hover {
+        background-color: var(--fifth-purple);
+        border-radius: 5px;
+    }
+}
+
+form {
+    ::placeholder {
+        color: var(--fifth-color);
+    }
+
+    input,
+    select,
+    textarea {
+        line-height: 1em;
+        background-color: var(--fourth-color);
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #cacaca;
+        border-radius: 5px;
+    }
+
+    label {
+        flex: 1;
+        font-family: var(--secondary-font);
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    div {
+        gap: 5px;
+    }
+}
+
+.newfooter {
+    background-image: linear-gradient(to right, rgb(238, 238, 238, 0.85), rgb(238, 238, 238, 0.85)), url(../assets/Shooting-Stars.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    hr {
+        margin-block: 10px;
+    }
+
+    .fa-solid {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        border-radius: 50px;
+        color: var(--fourth-color);
+    }
+
+    h4 {
+        border-bottom: 3px solid var(--fifth-purple);
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .fa-location-dot {
+        padding-inline: 12px;
+    }
+}
+
+#off,
+#on {
+    display: none;
+}
