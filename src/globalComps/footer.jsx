@@ -1,9 +1,9 @@
-import logo from './assets/logo.png';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
     return (
-        <>
-        <div className="container calling">
+        <div className='container'>
+        <div className="calling">
             <div className="row">
                 <div className="column grid grid1">
                     <div>
@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-        <div className="container newfooter">
+        <div className="newfooter">
             <div className="row">
                 <div className="grid grid3">
                     <div>
@@ -45,6 +45,6 @@ export default function Footer() {
                 <p style={{lineHeight:1, fontSize:13}}>© Copyright 2026 <b>Dummy</b>. All Rights Reserved.</p>
             </div>
         </div>
-        </>
+        </div>
     );
 }
